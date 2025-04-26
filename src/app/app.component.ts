@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { DatepickerDemoComponent } from './components/datepicker-demo.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, DatepickerDemoComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <app-datepicker-demo/>
 
-    <router-outlet />
+    <router-outlet/>
   `,
   styles: [],
 })
 export class AppComponent {
-  title = 'custom-datepicker-default';
 }
