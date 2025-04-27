@@ -84,11 +84,13 @@ export class CustomDatepickerComponent implements OnInit {
     console.log('Selected Month: ', event.node.value);
     this.hasMonth = event.node.value;
     this.monthName = this.months[event.node.value - 1].label;
+    this.validDate();
   }
 
   onDayChange(event: any) {
     console.log('Selected Day: ', event.node.value);
     this.hasDay = event.node.value;
+    this.validDate();
   }
 
   validDate(): void {
